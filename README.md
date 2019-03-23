@@ -18,8 +18,8 @@ npm install sys-xattr
 Usage
 -----
 ```js
-const xattr = require("sys-xattr");
-const value = xattr.getxattr("/path/to/file", "user.attrib-name");
+const {getxattrSync} = require("sys-xattr");
+const value = getxattrSync("/path/to/file", "user.attrib-name");
 ```
 
 API
@@ -29,8 +29,8 @@ API
 Read extended file system attribute `attr` from the file system at `path`.
 
 ##### Arguments
-**path** *<string>* File system path from which to read attribute.
-**attr** *<string>* Name of extended attribute to read.
+**path** *<string>* File system path from which to read attribute.  
+**attr** *<string>* Name of extended attribute to read.  
 
 ##### Returns
 Returns the attribute value, or undefined if the attribute value is not set.

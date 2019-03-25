@@ -3,6 +3,7 @@
 
 #include <napi.h>
 
-Napi::String call_getxattr(const Napi::CallbackInfo&);
+void getxattr_async(const Napi::CallbackInfo&);
+Napi::String getxattr_sync(const Napi::CallbackInfo&);
 
 #endif
